@@ -28,9 +28,26 @@ cd JFF-return
 ```
 ### 2. Set Up the Database
 
-1. Open MySQL Workbench and select the schema
-2. Run the SQL script by selecting SQL-DUMP.sql
-3. Execute the script to set up the database schema and initial data
+1. **Open MySQL Workbench:**
+
+   - Start MySQL Workbench and connect to your MySQL server.
+
+2. **Create a New Schema:**
+
+   - Click on the `Schemas` tab.
+   - Right-click and select `Create Schema`.
+   - Enter a name for your schema (e.g., `your_database_name`) and click `Apply`.
+
+3. **Import the SQL Script:**
+
+   - Go to `File` > `Open SQL Script` and select `SQL-DUMP.sql` from your project folder.
+   - Make sure the new schema is selected in the dropdown menu.
+
+4. **Execute the Script:**
+
+   - Click the `Execute` button (lightning bolt icon) to run the script.
+   - This will create tables and insert data as defined in your SQL file.
+
 
 ### 3. Install Dependencies
 Install the required Node.js packages:
@@ -47,7 +64,7 @@ let config = {
     host: "localhost",        // Replace with your database hostname
     user: "root",             // Replace with your database username
     password: "PASSWORD",    // Replace with your database password
-    database: "dbs",          // Replace with your database name
+    database: "dbs",          // Replace with your database name (schema name)
 };
 ```
 
