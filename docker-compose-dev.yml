@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  frontend:
+    image: pattaradanai888/jff-deploy-dev
+    ports:
+      - "8081:3000"
